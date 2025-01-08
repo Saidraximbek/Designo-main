@@ -1,22 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>Website name</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Designo</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+  </head>
+  <body>
     <!-- Header start -->
-     <header class="header"></header>
+    <header class="header">
+      <nav class="sitenav container">
+        <div class="sitenav__logo">
+          <img
+            class="sitenav__logo__img"
+            src="./images/shared/desktop/logo-dark.png"
+            alt="logo"
+          />
+        </div>
+
+        <ul class="sitenav__list text-preset-4">
+          <li class="sitenav__list__item"><a href="#">OUR COMPANY</a></li>
+          <li class="sitenav__list__item"><a href="#">LOCATIONS</a></li>
+          <li class="sitenav__list__item"><a href="#">CONTACT</a></li>
+          <li class="sitenav__list__menu">
+            <img src="./images/home/mobile/Group.svg" alt="" />
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- Header end -->
 
     <!-- Main start -->
-     <main class="main"></main>
+    <main class="main">
+      <section class="hero container">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h2 class="hero__title text-preset-1">
+              Award-winning custom designs and digital branding solutions
+            </h2>
+            <p class="hero__subtitle">
+              With over 10 years in the industry, we are experienced in creating
+              fully responsive websites, app design, and engaging brand
+              experiences. Find out more about our services.
+            </p>
+
+            <a href="#" class="btn hero__btn">Learn More</a>
+          </div>
+          <div class="hero__img__div">
+            <img
+              class="hero__img"
+              src="./images/home/desktop/black_front copy 4.png"
+              alt="phone img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="img__card container">
+        <div class="img__card__container">
+          <ul class="img__card__list">
+            <li class="img__card__list__item">
+              <div class="img__card__list__item__content">
+                <h2 class="img__carrd__list__item__title">WEB DESIGN</h2>
+                <p class="img__carrd__list__item__subtitle">VIEW PROJECTS</p>
+              </div>
+
+              <picture>
+                <source
+                  srcset="./images/home/mobile/image-web-design.jpg"
+                  media="(max-width:375px)"
+                />
+                <source
+                  srcset="./images/home/tablet/image-web-design.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  src="./images/home/desktop/image-web-design-large.jpg"
+                  alt=""
+                />
+              </picture>
+            </li>
+
+            <li class="img__card__list__item">
+              <div class="img__card__list__item__content">
+                <h2 class="img__carrd__list__item__title">APP DESIGN</h2>
+                <p class="img__carrd__list__item__subtitle">VIEW PROJECTS</p>
+              </div>
+              <picture>
+                <source
+                  srcset="./images/home/mobile/image-app-design.jpg"
+                  media="(max-width:375px)"
+                />
+                <source
+                  srcset="./images/home/tablet/image-app-design.jpg"
+                  media="(max-width:768px)"
+                />
+                <img src="./images/home/desktop/image-app-design.jpg" alt="" />
+              </picture>
+            </li>
+
+            <li class="img__card__list__item">
+              <div class="img__card__list__item__content">
+                <h2 class="img__carrd__list__item__title">GRAPHIC DESIGN</h2>
+                <p class="img__carrd__list__item__subtitle">VIEW PROJECTS</p>
+              </div>
+              <picture>
+                <source
+                  srcset="./images/home/mobile/image-graphic-design.jpg"
+                  media="(max-width:375px)"
+                />
+                <source
+                  srcset="./images/home/tablet/image-graphic-design.jpg"
+                  media="(max-width:768px)"
+                />
+                <img
+                  src="./images/home/desktop/image-graphic-design.jpg"
+                  alt=""
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <!-- Main end -->
 
     <!-- Footer start -->
-     <footer class="footer"></footer>
+    <footer class="footer"></footer>
     <!-- Footer end -->
-</body>
+  </body>
 </html>
