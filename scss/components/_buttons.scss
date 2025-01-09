@@ -13,3 +13,8 @@
     font-weight: 500;
     line-height: 1.44;
 }
+
+.btn:active {
+    background-color: #FFAD9B;
+    color: $secondary-color;
+}
