@@ -5,8 +5,6 @@
   max-width: 1211px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
   display: flex;
   flex-direction: column;
   gap: 3.4rem;
@@ -46,10 +44,80 @@
 .sitenav__list__menu {
   display: none;
 }
+
+
+
+
+
+@media screen and (max-width: 474px) {
+    .sitenav {
+    padding-left: 0rem;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .sitenav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 12rem;
+    gap: 1.2rem;
+    right: 3.9rem;
+    padding: 3rem 1.8rem;
+    background-color: hsla(10, 34%, 21%, 0.9);
+    border-radius: 1.5rem;
+    color: $secondary-color;
+    transition: opacity ease 0.5s;
+  }
+
+  .sitenav__list__item {
+    padding:1.8rem 3rem ;
+    width: 100%;
+    border-radius: 1.5rem;
+    
+  }
+
+  .sitenav__list__item a {
+    color: $secondary-color;
+  }
+
+  .sitenav__list__item:hover {
+    background-color:  #3d3c3c;
+    
+  }
+
+  .sitenav__list__item a:hover {
+
+    text-decoration: none;
+  }
+
+  .sitenav__list__menu {
+    display: block;
+  }
+
+  .sitenav__list {
+    opacity: 0;
+  }
+}
+
+.none {
+  opacity: 1;
+  
+}
+
+
+
 @media screen and (max-width: 375px) {
   .header {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .sitenav__list {
+    right: 1.2rem;
+  
   }
 
   .text-preset-1 {
@@ -59,22 +127,6 @@
   
 }
 
-@media screen and (max-width: 474px) {
-    .sitenav {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .sitenav__list__item {
-    display: none;
-  }
-
-  .sitenav__list__menu {
-    display: block;
-  }
-}
 
 .img__card {
   padding-top: 16rem;

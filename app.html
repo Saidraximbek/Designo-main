@@ -12,27 +12,29 @@
     <header class="header container">
       <nav class="sitenav">
         <div class="sitenav__logo">
-          <img
-            class="sitenav__logo__img"
-            src="./images/shared/desktop/logo-dark.png"
-            alt="logo"
-          />
+          <a href="./index.html">
+            <img
+              class="sitenav__logo__img"
+              src="./images/shared/desktop/logo-dark.png"
+              alt="logo"
+            />
+          </a>
         </div>
-
+    
         <ul class="sitenav__list text-preset-4">
           <li class="sitenav__list__item"><a href="./about.html">OUR COMPANY</a></li>
           <li class="sitenav__list__item"><a href="./location.html">LOCATIONS</a></li>
           <li class="sitenav__list__item"><a href="./contact.html">CONTACT</a></li>
-          <li class="sitenav__list__menu">
-            <img src="./images/home/mobile/Group.svg" alt="" />
-          </li>
         </ul>
+        <div class="sitenav__list__menu">
+          <img width="24" height="24" id="menuToggle" src="./images/home/mobile/Group.svg" alt="menu icon" />
+        </div>
       </nav>
     </header>
     <!-- Header end -->
 
     <main class="main">
-      <section class="ctg container">
+      <section class="ctg container app__container">
         <div class="ctg__container container web__container">
           <div class="web__content__one">
             <h3 class="ctg__content__title text-preset-2">App Design</h3>
@@ -169,7 +171,7 @@
       <footer class="footer">
         <div class="footer__container container">
           <div class="footer__nav">
-            <img src="./images/shared/desktop/logo-light.png" alt="logo" />
+            <a href="./index.html"><img src="./images/shared/desktop/logo-light.png" alt="logo" /></a>
             <ul class="footer__nav__list">
               <li class="footer__nav__list__item"><a style="color: white;" href="./about.html">OUR COMPANY</a></li>
               <li class="footer__nav__list__item"><a style="color: white;" href="./location.html">lOCATIONS</a></li>
@@ -200,5 +202,6 @@
         </div>
       </footer>
       <!-- Footer end -->
+      <script src="./script.js"></script>
   </body>
 </html>
